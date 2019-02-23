@@ -1,8 +1,6 @@
 /*
 Juliana Sonan
 AmortizationCalculator Project
-The application will create an amortization schedule based on 
-the inputs from the user
  */
 package amortizationcalculator;
 import javafx.application.Application;
