@@ -3,13 +3,8 @@ Juliana Sonan
 AmortizationCalculator Project
  */
 package amortizationcalculator;
-
-/**
- *
- * @author jpowell
- */
 //Loan class
-class Loan {
+public class Loan {
     //Class variables
     private double amount;
     private double annualInterestRate;
