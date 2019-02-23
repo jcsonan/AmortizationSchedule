@@ -59,12 +59,16 @@ public class AmortizationCalculator extends Application {
         vBox.setMaxHeight(primScreenBounds.getHeight());
         //Display SummaryPane and SchedulePane when the button is clicked
         btCalculate.setOnMouseClicked(e -> {
+            vBox.getChildren().clear();
+            vBox.getChildren().add(gridPane);
             display();
             primaryStage.sizeToScene();
         });
         //Display SummaryPane and SchedulePane when the user's presses the ENTER button
         vBox.setOnKeyPressed(e -> {
             if (e.getCode() == KeyCode.ENTER) {
+                vBox.getChildren().clear();
+                vBox.getChildren().add(gridPane);
                 display();    
                 primaryStage.sizeToScene();
             }
